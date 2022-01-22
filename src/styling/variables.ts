@@ -4,6 +4,7 @@ const Variables = createGlobalStyle`
   :root {
     --color-background: hsla(0, 0%, 15%, 1.0);
     --color-light: hsla(0, 0%, 85%, 1.0);
+    --color-gray: hsla(0, 0%, 60%, 1.0);
 
     --color-orange: hsla(28, 70%, 66%, 1.0);
     --color-pink: hsla(349, 66%, 72%, 1.0);

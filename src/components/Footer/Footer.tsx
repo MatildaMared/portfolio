@@ -1,16 +1,26 @@
 import React from "react";
 import { Heart } from "react-feather";
 import styled, { keyframes } from "styled-components";
+import FooterNav from "./FooterNav";
 
 function Footer() {
 	return (
-		<footer>
+		<Wrapper>
 			<CopyrightText>
 				Made with <Heart size={14} /> by Matilda Mared
 			</CopyrightText>
-		</footer>
+			<FooterNav />
+		</Wrapper>
 	);
 }
+
+const Wrapper = styled.footer`
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  margin: 2rem 0;
+`;
 
 const beatAnimation = keyframes`
   0%, 50%, 100% { transform: scale(1, 1) translateY(3px); }
@@ -18,6 +28,7 @@ const beatAnimation = keyframes`
 `;
 
 const CopyrightText = styled.p`
+	padding: 1.5rem 0;
 	font-family: var(--font-secondary);
 	display: flex;
 	font-size: 0.8rem;
