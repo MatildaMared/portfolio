@@ -25,7 +25,6 @@ function GradientHeading(props: Props) {
 }
 
 const baseStyles = css`
-	font-size: 3rem;
 	font-weight: 800;
 	width: fit-content;
 	background-color: var(--color-purple);
@@ -38,32 +37,26 @@ const baseStyles = css`
 `;
 
 const H1 = styled.h1`
-	font-size: 3rem;
 	${baseStyles}
 `;
 
 const H2 = styled.h2`
-	font-size: 2.5rem;
 	${baseStyles}
 `;
 
 const H3 = styled.h3`
-	font-size: 2rem;
 	${baseStyles}
 `;
 
 const H4 = styled.h4`
-	font-size: 1.5rem;
 	${baseStyles}
 `;
 
 const H5 = styled.h5`
-	font-size: 1rem;
 	${baseStyles}
 `;
 
 const H6 = styled.h6`
-	font-size: 0.5rem;
 	${baseStyles}
 `;
 

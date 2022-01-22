@@ -1,11 +1,13 @@
 import React from "react";
-import GradientHeading from "./components/GradientHeading/GradientHeading";
 import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
 	return (
-		<>
-      <GradientHeading type="h1" text="Hello World" />
+    <>
+      <NavBar />
+      <Header />
       <Footer />
 		</>
 	);
