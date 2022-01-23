@@ -51,7 +51,6 @@ function Header() {
 }
 
 const Wrapper = styled.header`
-	padding: 0 1rem;
 	max-width: var(--max-width);
 	margin: 0 auto;
 	margin-top: 2rem;
@@ -67,6 +66,10 @@ const Text = styled.span`
 const IntroductionText = styled.p`
 	margin-top: 1.5rem;
 	max-width: 520px;
+
+  @media (max-width: 700px) {
+    margin-top: .5rem;
+  }
 `;
 
 const Signature = styled.img`

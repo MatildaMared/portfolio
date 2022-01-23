@@ -13,26 +13,32 @@ const GlobalStyles = createGlobalStyle`
 
   h1 {
     font-size: var(--font-size-h1);
+    @media (max-width: 900px) {
+      font-size: var(--font-size-h1-tablet);
+    }
+    @media (max-width: 500px) {
+        font-size: var(--font-size-h1-mobile);
+    }
   }
 
   h2 {
     font-size: var(--font-size-h2);
+    @media (max-width: 900px) {
+      font-size: var(--font-size-h2-tablet);
+    }
+    @media (max-width: 500px) {
+      font-size: var(--font-size-h2-mobile);
+    }
   }
 
   h3 {
     font-size: var(--font-size-h3);
-  }
-
-  h4 {
-    font-size: var(--font-size-h4);
-  }
-
-  h5 {
-    font-size: var(--font-size-h5);
-  }
-
-  h6 {
-    font-size: var(--font-size-h6);
+    @media (max-width: 900px) {
+      font-size: var(--font-size-h3-tablet);
+    }
+    @media (max-width: 500px) {
+      font-size: var(--font-size-h3-mobile);
+    }
   }
 
   p {

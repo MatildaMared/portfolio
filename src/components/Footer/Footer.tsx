@@ -20,6 +20,7 @@ const Wrapper = styled.footer`
 	flex-direction: column;
 	align-items: center;
   margin: 2rem 0;
+	padding-bottom: 2rem;
 `;
 
 const beatAnimation = keyframes`

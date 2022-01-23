@@ -13,12 +13,6 @@ function GradientHeading(props: Props) {
 		return <H2>{props.text}</H2>;
 	} else if (props.type === "h3") {
 		return <H3>{props.text}</H3>;
-	} else if (props.type === "h4") {
-		return <H4>{props.text}</H4>;
-	} else if (props.type === "h5") {
-		return <H5>{props.text}</H5>;
-	} else if (props.type === "h6") {
-		return <H6>{props.text}</H6>;
 	} else {
 		return null;
 	}
@@ -45,18 +39,6 @@ const H2 = styled.h2`
 `;
 
 const H3 = styled.h3`
-	${baseStyles}
-`;
-
-const H4 = styled.h4`
-	${baseStyles}
-`;
-
-const H5 = styled.h5`
-	${baseStyles}
-`;
-
-const H6 = styled.h6`
 	${baseStyles}
 `;
 
