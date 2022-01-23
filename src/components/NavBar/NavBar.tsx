@@ -1,11 +1,12 @@
 import React from "react";
+import styled from "styled-components";
 
 function NavBar() {
-	return (
-		<div>
-			<h1>Navbar</h1>
-		</div>
-	);
+	return <Wrapper></Wrapper>;
 }
+
+const Wrapper = styled.nav`
+	height: 150px;
+`;
 
 export default NavBar;

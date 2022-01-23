@@ -40,7 +40,7 @@ function Header() {
 			<IntroductionText>
 				Så roligt att du har hittat hit! 👋🏻 Jag är en{" "}
 				<EmphasizeText>JavaScriptutvecklare</EmphasizeText> som strävar efter
-				att skapa lösningar som inte bara ser bra ut – de ska också vara
+				att skapa lösningar som inte bara ser bra ut – de ska dessutom vara
 				funktionella och tillgänglighetsanpassade. Att skriva kod är bland det
 				roligaste jag vet och på denna sida visar jag upp ett urval av mina
 				projekt.
@@ -72,7 +72,7 @@ const IntroductionText = styled.p`
 const Signature = styled.img`
 	width: 120px;
 	height: auto;
-  padding: 1rem 0;
+	padding: 1rem 0;
 `;
 
 export default Header;

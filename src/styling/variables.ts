@@ -12,6 +12,7 @@ const Variables = createGlobalStyle`
     --color-blue: hsla(184, 45%, 65%, 1.0);
 
     --gradient: linear-gradient(90deg, var(--color-orange) 0%, var(--color-pink) 30%, var(--color-purple) 60%, var(--color-blue) 100%);
+    --gradient-vertical: linear-gradient(180deg, var(--color-orange) 0%, var(--color-pink) 30%, var(--color-purple) 60%, var(--color-blue) 100%);
 
     --max-width: 1000px;
 
