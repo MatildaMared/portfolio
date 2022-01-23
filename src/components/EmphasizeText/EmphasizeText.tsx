@@ -15,6 +15,7 @@ const Text = styled.em`
 	font-style: normal;
 	background-color: rgba(255, 255, 255, 0.1);
 	padding: 1px 2px;
+	white-space: nowrap;
 `;
 
 export default EmphasizeText;

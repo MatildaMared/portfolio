@@ -17,11 +17,11 @@ function ContactBanner() {
 		return (
 			<Wrapper>
 				<Container>
-					<GradientLine width={2} height={266} />
+          <GradientLine vertical={true} width={2} height={266} />
 					<p>Matilda Mared</p>
 				</Container>
 				<Container>
-					<GradientLine width={2} height={200} />{" "}
+          <GradientLine vertical={true} width={2} height={200} />{" "}
 					<a href="mailto:matildamared@live.se">matildamared@live.se</a>
 				</Container>
 			</Wrapper>

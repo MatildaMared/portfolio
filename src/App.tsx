@@ -4,6 +4,7 @@ import ContactBanner from "./components/ContactBanner/ContactBanner";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import NavBar from "./components/NavBar/NavBar";
+import About from "./components/About/About";
 
 function App() {
 	return (
@@ -11,6 +12,7 @@ function App() {
 			<NavBar />
 			<ContactBanner />
 			<Header />
+			<About />
 			<Footer />
 		</Wrapper>
 	);

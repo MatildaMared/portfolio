@@ -43,7 +43,26 @@ const GlobalStyles = createGlobalStyle`
 
   p {
     line-height: 1.6;
+    margin-bottom: 1rem;
   }
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 25%, 1);
+  border: 2px solid var(--color-background);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray);
+} 
 `;
 
 export default GlobalStyles;

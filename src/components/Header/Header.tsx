@@ -41,9 +41,8 @@ function Header() {
 				Så roligt att du har hittat hit! 👋🏻 Jag är en{" "}
 				<EmphasizeText>JavaScriptutvecklare</EmphasizeText> som strävar efter
 				att skapa lösningar som inte bara ser bra ut – de ska dessutom vara
-				funktionella och tillgänglighetsanpassade. Att skriva kod är bland det
-				roligaste jag vet och på denna sida visar jag upp ett urval av mina
-				projekt.
+				funktionella och tillgängliga. Att skriva kod är bland det roligaste jag
+				vet och på denna sida visar jag upp ett urval av mina projekt.
 			</IntroductionText>
 			<Signature src={signature} alt="Matilda Mared" />
 		</Wrapper>
@@ -67,9 +66,9 @@ const IntroductionText = styled.p`
 	margin-top: 1.5rem;
 	max-width: 520px;
 
-  @media (max-width: 700px) {
-    margin-top: .5rem;
-  }
+	@media (max-width: 700px) {
+		margin-top: 0.5rem;
+	}
 `;
 
 const Signature = styled.img`
