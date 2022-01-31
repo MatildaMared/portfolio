@@ -7,7 +7,7 @@ import MatildaImage from "../../images/Matilda.jpg";
 
 function About() {
 	return (
-		<Wrapper>
+		<Wrapper id="about">
 			<SectionHeading title={"Om mig"} />
 			<InformationWrapper>
 				<article>

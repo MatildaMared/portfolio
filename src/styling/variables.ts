@@ -18,7 +18,8 @@ const Variables = createGlobalStyle`
 
     // ### WIDTH VARIABLES ###
 
-    --max-width: 1000px;
+    --max-width: "1000px";
+    --max-width-mobile: "900px";
 
     // ### FONT VARIABLES ###
 

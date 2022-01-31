@@ -54,6 +54,10 @@ const Wrapper = styled.header`
 	margin: 0 auto;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+
+	@media(max-width: 900px) {
+		padding-top: 12rem;
+	}
 `;
 
 const Text = styled.span`
