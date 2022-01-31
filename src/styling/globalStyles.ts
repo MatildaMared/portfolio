@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
     background-color: var(--color-background);
     font-family: var(--font-primary);
     color: var(--color-light);
+    width: 100%;
     max-width: 100vw;
     overflow-x: hidden;
   }
