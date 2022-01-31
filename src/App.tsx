@@ -54,8 +54,6 @@ const Wrapper = styled.div`
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 8rem;
-	overflow-x: hidden;
-	position: relative;
 
 	@media (max-width: 1200px) {
 		padding: 0 8rem;
@@ -69,6 +67,8 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.div<StyledProps>`
+	overflow-x: hidden;
+	position: relative;
 	display: ${({ open }) => (open ? "none" : "block")};
 `;
 
