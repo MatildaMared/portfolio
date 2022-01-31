@@ -55,6 +55,7 @@ const Wrapper = styled.div`
 	margin: 0 auto;
 	padding: 0 8rem;
 	overflow-x: hidden;
+	position: relative;
 
 	@media (max-width: 1200px) {
 		padding: 0 8rem;
