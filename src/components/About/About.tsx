@@ -70,7 +70,7 @@ function About() {
 const Wrapper = styled.section`
 	max-width: var(--max-width);
 	margin: 0 auto;
-	padding: 14rem 0;
+	padding: 14rem 0 0 0;
 `;
 
 const InformationWrapper = styled.div`
@@ -85,9 +85,9 @@ const InformationWrapper = styled.div`
 			transform: rotate(0deg);
 
 			@media (max-width: 500px) {
-        max-width: 300px;
+				max-width: 300px;
 				margin: 0 auto;
-        margin-bottom: 2rem;
+				margin-bottom: 2rem;
 			}
 		}
 	}

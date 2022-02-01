@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import NavBar from "./components/NavBar/NavBar";
 import About from "./components/About/About";
 import BurgerIcon from "./components/BurgerIcon/BurgerIcon";
+import Projects from "./components/Projects/Projects";
 
 function App() {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -38,6 +39,7 @@ function App() {
 				<ContactBanner />
 				<Header />
 				<About />
+				<Projects />
 				<Footer />
 			</Content>
 		</Wrapper>
