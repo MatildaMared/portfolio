@@ -33,7 +33,7 @@ interface StyledProps {
 }
 
 const Wrapper = styled.nav<StyledProps>`
-	height: 200px;
+	height: 125px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;

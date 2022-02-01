@@ -65,8 +65,6 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.div<StyledProps>`
-	overflow-x: hidden;
-	position: relative;
 	display: ${({ open }) => (open ? "none" : "block")};
 `;
 
