@@ -1,6 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+  body, html {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
   html {
     scroll-behavior: smooth;
   }
@@ -9,9 +14,6 @@ const GlobalStyles = createGlobalStyle`
     background-color: var(--color-background);
     font-family: var(--font-primary);
     color: var(--color-light);
-    width: 100%;
-    max-width: 100vw;
-    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {

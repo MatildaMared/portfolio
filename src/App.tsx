@@ -32,10 +32,8 @@ function App() {
 
 	return (
 		<Wrapper>
-			<div>
-				<BurgerIcon menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-				<NavBar menuOpen={menuOpen} />
-			</div>
+			<NavBar menuOpen={menuOpen} />
+			<BurgerIcon menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 			<Content open={menuOpen}>
 				<ContactBanner />
 				<Header />

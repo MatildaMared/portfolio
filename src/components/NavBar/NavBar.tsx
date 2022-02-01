@@ -38,8 +38,10 @@ const Wrapper = styled.nav<StyledProps>`
 	align-items: center;
 	justify-content: flex-end;
 	transition: transform 0.3s ease-in-out;
-
+	z-index: 15;
+	
 	@media (max-width: 900px) {
+		overflow: hidden;
 		transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
 		display: flex;
 		flex-direction: column;
@@ -47,11 +49,10 @@ const Wrapper = styled.nav<StyledProps>`
 		background: var(--color-background);
 		height: 100vh;
 		text-align: left;
-		padding: 2rem;
 		position: absolute;
 		top: 0;
 		right: 0;
-		width: 100%;
+		width: ${({ open }) => (open ? "100%" : "0")};
 		height: 100vh;
 		z-index: 10;
 	}
