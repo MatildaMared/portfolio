@@ -6,7 +6,7 @@ import { ExternalLink, GitHub } from "react-feather";
 
 function Projects() {
 	return (
-		<Wrapper>
+		<Wrapper id="projects">
 			<SectionHeading title="Projekt" />
 			<Project>
 				<ProjectHeading>Instablam</ProjectHeading>
@@ -45,6 +45,40 @@ function Projects() {
 					</div>
 				</ProjectContent>
 			</Project>
+			<Project>
+				<ProjectHeading>Linkshare</ProjectHeading>
+				<ProjectContent>
+					<PlaceholderImage>
+						<span>Kommer snart</span>
+					</PlaceholderImage>
+					<div>
+						<Description>
+							Linkshare är en app där användaren kan skapa listor med länkar som
+							sedan går att dela med vänner. Idén föddes tidigt i min utbildning
+							till frontendutvecklare när jag insåg hur smidigt det är att kunna
+							dela större länksamlingar med vänner. Linkshare är en
+							fullstackapplikation, byggd med React, NodeJS, Express & MongoDB.
+						</Description>
+						<TechnologyList>
+							<Technology>HTML</Technology>
+							<Technology>CSS</Technology>
+							<Technology>JavaScript</Technology>
+							<Technology>React</Technology>
+							<Technology>styled-components</Technology>
+							<Technology>Node.js</Technology>
+							<Technology>Express</Technology>
+							<Technology>MongoDB</Technology>
+							<Technology>jest</Technology>
+						</TechnologyList>
+						<Link
+							href="https://github.com/MatildaMared/linkshare"
+							target="_blank"
+						>
+							GitHub repo <GitHub size={16} />
+						</Link>
+					</div>
+				</ProjectContent>
+			</Project>
 		</Wrapper>
 	);
 }
@@ -58,6 +92,36 @@ const Wrapper = styled.section`
 const Project = styled.article`
 	padding: 2rem;
 	border: 1px solid rgba(255, 255, 255, 0.05);
+
+	&:not(:last-child) {
+		margin-bottom: 6rem;
+	}
+`;
+
+const PlaceholderImage = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-width: 300px;
+	max-width: 500px;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.1);
+	height: 100%;
+	min-height: 300px;
+	margin: 0 auto;
+	margin-right: 1rem;
+
+	@media (max-width: 900px) {
+		margin-bottom: 2rem;
+	}
+
+	& span {
+		transform: rotate(-15deg);
+		color: var(--color-gray);
+	}
 `;
 
 const ProjectHeading = styled.h3`
@@ -89,6 +153,10 @@ const Screenshot = styled.img`
 const ProjectContent = styled.div`
 	display: flex;
 	justify-content: flex-end;
+
+	@media (max-width: 900px) {
+		flex-direction: column;
+	}
 `;
 
 const Description = styled.p`
@@ -100,10 +168,16 @@ const ScreenshotWrapper = styled.figure`
 	width: 100%;
 	min-width: 300px;
 	max-width: 500px;
+	height: auto;
 	border-radius: 0.5rem;
 	overflow: hidden;
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	margin: 0 auto;
 	margin-right: 1rem;
+
+	@media (max-width: 900px) {
+		margin-bottom: 2rem;
+	}
 `;
 
 const TechnologyList = styled.ul`
@@ -111,6 +185,7 @@ const TechnologyList = styled.ul`
 	padding: 0;
 	display: flex;
 	justify-content: flex-end;
+	flex-wrap: wrap;
 	font-family: var(--font-secondary);
 	font-size: 0.8rem;
 	color: var(--color-purple);
@@ -121,6 +196,7 @@ const Technology = styled.li`
 	margin: 0.25rem;
 	padding: 1px 3px;
 	background-color: rgba(255, 255, 255, 0.05);
+	white-space: nowrap;
 
 	&:last-child {
 		margin-right: 0;

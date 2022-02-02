@@ -15,11 +15,12 @@ function Footer() {
 }
 
 const Wrapper = styled.footer`
+	padding-top: 12rem;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-  margin: 2rem 0;
+	margin: 2rem 0;
 	padding-bottom: 2rem;
 `;
 
