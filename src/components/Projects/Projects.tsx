@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import instablamScreenshot from "../../images/instablam-screenshot.png";
+import strandvaderScreenshot from "../../images/strandvader-screenshot.png";
 import { ExternalLink, GitHub } from "react-feather";
 
 function Projects() {
@@ -72,6 +73,35 @@ function Projects() {
 						</TechnologyList>
 						<Link
 							href="https://github.com/MatildaMared/linkshare"
+							target="_blank"
+						>
+							GitHub repo <GitHub size={16} />
+						</Link>
+					</div>
+				</ProjectContent>
+			</Project>
+			<Project>
+				<ProjectHeading>Strandväder</ProjectHeading>
+				<ProjectContent>
+					<ScreenshotWrapper>
+						<Screenshot src={strandvaderScreenshot} />
+					</ScreenshotWrapper>
+					<div>
+						<Description>
+							Strandväder är en väderapp som, med hjälp av ett API, hämtar den aktuella väderprognosen för en stad som användaren väljer. Utöver att visa
+							prognosen får användaren ett litet meddelande som berättar om det verkar vara strandväder just nu. ☀️
+						</Description>
+						<TechnologyList>
+							<Technology>HTML</Technology>
+							<Technology>CSS</Technology>
+							<Technology>JavaScript</Technology>
+							<Technology>Sass</Technology>
+						</TechnologyList>
+						<Link href="https://www.strandvader.se" target="_blank">
+							Live demo <ExternalLink size={16} />
+						</Link>
+						<Link
+							href="https://github.com/MatildaMared/js-strandvader"
 							target="_blank"
 						>
 							GitHub repo <GitHub size={16} />
@@ -164,8 +194,9 @@ const Description = styled.p`
 `;
 
 const ScreenshotWrapper = styled.figure`
-	display: flex;
+	align-self: flex-start;
 	width: 100%;
+	height: auto;
 	min-width: 300px;
 	max-width: 500px;
 	height: auto;
