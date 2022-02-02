@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 `;
 
 const Heading = styled.h2`
-	font-size: 1.6rem;
+	font-size: 2.2rem;
   margin-left: 1rem;
 `;
 
