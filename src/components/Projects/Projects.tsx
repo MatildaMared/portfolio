@@ -54,11 +54,12 @@ function Projects() {
 					</PlaceholderImage>
 					<div>
 						<Description>
-							Linkshare är en app där användaren kan skapa listor med länkar som
-							sedan går att dela med vänner. Idén föddes tidigt i min utbildning
-							till frontendutvecklare när jag insåg hur smidigt det är att kunna
-							dela större länksamlingar med vänner. Linkshare är en
-							fullstackapplikation, byggd med React, NodeJS, Express & MongoDB.
+							Under konstruktion! Linkshare är en app där användaren kan skapa
+							listor med länkar som sedan går att dela med vänner. Idén föddes
+							tidigt i min utbildning till frontendutvecklare när jag insåg hur
+							smidigt det är att kunna dela större länksamlingar med vänner.
+							Linkshare är en fullstackapplikation, byggd med React, NodeJS,
+							Express & MongoDB.
 						</Description>
 						<TechnologyList>
 							<Technology>HTML</Technology>
@@ -88,8 +89,10 @@ function Projects() {
 					</ScreenshotWrapper>
 					<div>
 						<Description>
-							Strandväder är en väderapp som, med hjälp av ett API, hämtar den aktuella väderprognosen för en stad som användaren väljer. Utöver att visa
-							prognosen får användaren ett litet meddelande som berättar om det verkar vara strandväder just nu. ☀️
+							Strandväder är en väderapp som, med hjälp av ett API, hämtar den
+							aktuella väderprognosen för en stad som användaren väljer. Utöver
+							att visa prognosen får användaren ett litet meddelande som
+							berättar om det verkar vara strandväder just nu. ☀️
 						</Description>
 						<TechnologyList>
 							<Technology>HTML</Technology>
