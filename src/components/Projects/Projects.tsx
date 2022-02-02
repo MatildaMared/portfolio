@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import instablamScreenshot from "../../images/instablam-screenshot.png";
+import { ExternalLink, GitHub } from "react-feather";
 
 function Projects() {
 	return (
@@ -16,11 +17,11 @@ function Projects() {
 					<div>
 						<Description>
 							Instablam är en PWA där användaren med hjälp av enhetens kamera
-							tar foton och adderar passande filter. Fotona sparas och finns
-							tillgängliga i ett galleri så att användaren kan bläddra bland
-							alla tagna bilder. När det kommer till denna app är jag särskilt
-							stolt över arbetet jag har lagt ner för att göra innehållet
-							tillgänglighetsanpassat.
+							tar foton och adderar passande filter. Fotona sparas därefter och
+							finns tillgängliga i ett galleri så att användaren kan bläddra
+							bland alla tagna bilder. När det kommer till denna app är jag
+							särskilt stolt över arbetet jag har lagt ner för att göra
+							innehållet tillgänglighetsanpassat.
 						</Description>
 						<TechnologyList>
 							<Technology>HTML</Technology>
@@ -29,6 +30,18 @@ function Projects() {
 							<Technology>React</Technology>
 							<Technology>styled-components</Technology>
 						</TechnologyList>
+						<Link
+							href="https://matildamared-instablam.netlify.app"
+							target="_blank"
+						>
+							Live demo <ExternalLink size={16} />
+						</Link>
+						<Link
+							href="https://github.com/MatildaMared/instablam"
+							target="_blank"
+						>
+							GitHub repo <GitHub size={16} />
+						</Link>
 					</div>
 				</ProjectContent>
 			</Project>
@@ -75,6 +88,7 @@ const Screenshot = styled.img`
 
 const ProjectContent = styled.div`
 	display: flex;
+	justify-content: flex-end;
 `;
 
 const Description = styled.p`
@@ -95,22 +109,44 @@ const ScreenshotWrapper = styled.figure`
 const TechnologyList = styled.ul`
 	list-style-type: none;
 	padding: 0;
-  display: flex;
-  justify-content: flex-end;
-  font-family: var(--font-secondary);
-  font-size: .8rem;
-  color: var(--color-purple);
+	display: flex;
+	justify-content: flex-end;
+	font-family: var(--font-secondary);
+	font-size: 0.8rem;
+	color: var(--color-purple);
 `;
 
 const Technology = styled.li`
 	display: inline-block;
-  margin: .25rem;
-  padding: 1px 3px;
-  background-color: rgba(255, 255, 255, .05);
+	margin: 0.25rem;
+	padding: 1px 3px;
+	background-color: rgba(255, 255, 255, 0.05);
 
-  &:last-child {
-    margin-right: 0;
-  }
+	&:last-child {
+		margin-right: 0;
+	}
+`;
+
+const Link = styled.a`
+	text-align: right;
+	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin: 1rem 0;
+	font-family: var(--font-secondary);
+	font-size: 0.9rem;
+	color: var(--color-gray);
+	text-decoration: none;
+	transition: all 0.3s;
+
+	& svg {
+		margin-left: 0.5rem;
+	}
+
+	&:hover {
+		color: var(--color-purple);
+	}
 `;
 
 export default Projects;
