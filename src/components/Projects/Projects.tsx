@@ -3,12 +3,55 @@ import styled from "styled-components";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import instablamScreenshot from "../../images/instablam-screenshot.png";
 import strandvaderScreenshot from "../../images/strandvader-screenshot.png";
+import wildpostersScreenshot from "../../images/wildposters-screenshot.png";
 import { ExternalLink, GitHub } from "react-feather";
 
 function Projects() {
 	return (
 		<Wrapper id="projects">
 			<SectionHeading title="Projekt" />
+			<Project>
+				<ProjectHeading>Wild Posters</ProjectHeading>
+				<ProjectContent>
+					<ScreenshotWrapper>
+						<Screenshot src={wildpostersScreenshot} />
+					</ScreenshotWrapper>
+					<div>
+						<Description>
+							Wild posters är en webshop som säljer posters med naturteman. 🌿
+							En fullstackapplikation där användaren dessutom har möjlighet att
+							registrera sig och skapa ett konto för att kunna göra köp på
+							sidan. Jag har lagt särskilt fokus vid testning under utvecklingen
+							av denna applikation med målet att få till en hög täckningsgrad.
+						</Description>
+						<TechnologyList>
+							<Technology>HTML</Technology>
+							<Technology>CSS</Technology>
+							<Technology>TypeScript</Technology>
+							<Technology>React</Technology>
+							<Technology>styled-components</Technology>
+							<Technology>Node.js</Technology>
+							<Technology>Express</Technology>
+							<Technology>MongoDB</Technology>
+							<Technology>jest</Technology>
+							<Technology>react-testing-library</Technology>
+							<Technology>supertest</Technology>
+						</TechnologyList>
+						<Link
+							href="https://matildamared-nature-shop.herokuapp.com/"
+							target="_blank"
+						>
+							Live demo <ExternalLink size={16} />
+						</Link>
+						<Link
+							href="https://github.com/MatildaMared/nature-shop"
+							target="_blank"
+						>
+							GitHub repo <GitHub size={16} />
+						</Link>
+					</div>
+				</ProjectContent>
+			</Project>
 			<Project>
 				<ProjectHeading>Instablam</ProjectHeading>
 				<ProjectContent>
@@ -39,41 +82,6 @@ function Projects() {
 						</Link>
 						<Link
 							href="https://github.com/MatildaMared/instablam"
-							target="_blank"
-						>
-							GitHub repo <GitHub size={16} />
-						</Link>
-					</div>
-				</ProjectContent>
-			</Project>
-			<Project>
-				<ProjectHeading>Linkshare</ProjectHeading>
-				<ProjectContent>
-					<PlaceholderImage>
-						<span>Kommer snart</span>
-					</PlaceholderImage>
-					<div>
-						<Description>
-							Under konstruktion! Linkshare är en app där användaren kan skapa
-							listor med länkar som sedan går att dela med vänner. Idén föddes
-							tidigt i min utbildning till frontendutvecklare när jag insåg hur
-							smidigt det är att kunna dela större länksamlingar med vänner.
-							Linkshare är en fullstackapplikation, byggd med React, NodeJS,
-							Express & MongoDB.
-						</Description>
-						<TechnologyList>
-							<Technology>HTML</Technology>
-							<Technology>CSS</Technology>
-							<Technology>JavaScript</Technology>
-							<Technology>React</Technology>
-							<Technology>styled-components</Technology>
-							<Technology>Node.js</Technology>
-							<Technology>Express</Technology>
-							<Technology>MongoDB</Technology>
-							<Technology>jest</Technology>
-						</TechnologyList>
-						<Link
-							href="https://github.com/MatildaMared/linkshare"
 							target="_blank"
 						>
 							GitHub repo <GitHub size={16} />
