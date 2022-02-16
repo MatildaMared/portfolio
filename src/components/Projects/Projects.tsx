@@ -139,31 +139,31 @@ const Project = styled.article`
 	}
 `;
 
-const PlaceholderImage = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	min-width: 300px;
-	max-width: 500px;
-	border-radius: 0.5rem;
-	overflow: hidden;
-	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-	background-color: rgba(0, 0, 0, 0.1);
-	height: 100%;
-	min-height: 300px;
-	margin: 0 auto;
-	margin-right: 1rem;
+// const PlaceholderImage = styled.div`
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	width: 100%;
+// 	min-width: 300px;
+// 	max-width: 500px;
+// 	border-radius: 0.5rem;
+// 	overflow: hidden;
+// 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+// 	background-color: rgba(0, 0, 0, 0.1);
+// 	height: 100%;
+// 	min-height: 300px;
+// 	margin: 0 auto;
+// 	margin-right: 1rem;
 
-	@media (max-width: 900px) {
-		margin-bottom: 2rem;
-	}
+// 	@media (max-width: 900px) {
+// 		margin-bottom: 2rem;
+// 	}
 
-	& span {
-		transform: rotate(-15deg);
-		color: var(--color-gray);
-	}
-`;
+// 	& span {
+// 		transform: rotate(-15deg);
+// 		color: var(--color-gray);
+// 	}
+// `;
 
 const ProjectHeading = styled.h3`
 	width: 100%;
